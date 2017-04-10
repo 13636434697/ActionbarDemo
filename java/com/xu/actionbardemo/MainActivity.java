@@ -74,8 +74,10 @@ public class MainActivity extends AppCompatActivity {
     //有空指针的情况
     //在左上角做一些修改
     private void initActionbar() {
-        //ActionBar在11版本才能用的
-        ActionBar actionBar = getActionBar();
+//        //ActionBar在11版本才能用的
+//        ActionBar actionBar = getActionBar();
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
 
         actionBar.setTitle("哈哈哈哈");// 设置标题
         actionBar.setLogo(R.mipmap.ic_launcher);// 设置logo
